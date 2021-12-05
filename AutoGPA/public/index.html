@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>GPA Calculator</h1>
+        <div class="form-row">
+            <div class="col">
+                <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+            </div><br>
+            <div class="col">
+                <input id="unit-load" class="form-control" type="number" placeholder="Credits(Max:15)" min="1" max="15">
+            </div>
+            <div class="col">
+                <select id="grade" class="form-control">
+                    <option value="">Grade Points</option>
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="col">
+                <input id="add" class="btn btn-primary" type="button" value="add">
+                <input id="auto" class="btn btn-primary" type="button" value="Auto">
+            </div>
+        </div>
+        <table id="table" class="table table-bordered display-none">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit Load</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calc GP">
+            </div>
+            <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="module"src="script.js"></script>
+</body>
+</html>
